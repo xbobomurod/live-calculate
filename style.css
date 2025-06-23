@@ -1,0 +1,91 @@
+body {
+	font-family: 'Segoe UI', sans-serif;
+	background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+	color: #333;
+	padding: 40px;
+	text-align: center;
+	min-height: 100vh;
+}
+
+input,
+button {
+	padding: 12px 16px;
+	font-size: 16px;
+	margin: 10px 5px;
+	border: none;
+	border-radius: 8px;
+	outline: none;
+}
+
+input {
+	border: 2px solid #ccc;
+}
+
+ .fade-in {
+    animation: fadeIn 0.7s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .result {
+    font-size: 18px;
+    line-height: 1.6;
+    background: #f8f9fa;
+    border-left: 5px solid #0d6efd;
+    word-break: break-word;
+  }
+
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    .result {
+      font-size: 16px;
+      padding: 1rem;
+    }
+
+    button {
+      font-size: 16px;
+    }
+  }
+.date-picker-wrapper {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 20px;
+	background: white;
+	padding: 12px 16px;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	transition: all 0.3s;
+}
+
+.date-picker-wrapper label {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.date-picker-wrapper i {
+	font-size: 20px;
+	color: #007bff;
+}
+
+.date-picker-wrapper input[type='date'] {
+	border: none;
+	outline: none;
+	font-size: 16px;
+	padding: 5px;
+}
